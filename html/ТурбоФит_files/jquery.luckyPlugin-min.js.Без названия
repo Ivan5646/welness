@@ -1,0 +1,1 @@
+!function(t){t.fn.luckyPlugin=function(n){t.extend({top:!1},n),window.location.hostname;n&&(n.top&&t(function(){t("body").prepend('<div class="lucky-top"></div>'),t(".lucky-top").css("opacity","1")}),n.top&&t("head").append("<link rel='stylesheet' type='text/css' href='http://luckyshop.ru/library/luckyshop/jquery.luckyPlugin-min.css' />"))}}(jQuery);
