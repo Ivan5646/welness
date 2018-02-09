@@ -1,0 +1,74 @@
+.ex-machines {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    align-items: stretch;
+}
+
+.ex-machines h4 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.ex-machines_machine {
+    border: 2px solid #d9d9d9;
+    border-radius: 12px;
+    width: 20%;
+    text-align: center;
+}
+
+.ex-machines_img {
+    background-image: url(../img/roller.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    height: 320px;
+}
+.ex-machines_img--baro {
+    background-image: url(../img/baro.png);
+    background-size: 100%;
+}
+.ex-machines_img--vibro { 
+    background-image: url(../img/vibro.png);
+    background-size: 74%;
+}
+.ex-machines_img--lympho { 
+    background-image: url(../img/lympho.png);
+    background-size: 100%;
+}
+.ex-machines_description {
+    color: #e50b95;
+    font-weight: 700;
+    height: 110px;
+}
+
+.ex-machines_full-description {
+    border-top: 4px solid #ffff00;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .ex-machines { 
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .ex-machines_machine {
+        width: 44%;
+        margin-right: 6%;
+        margin-bottom: 3%;
+    }
+
+    .ex-machines_machine:nth-child(2), .ex-machines_machine:nth-child(4) {
+        margin-right: 0;
+    }
+    .ex-machines_machine:nth-child(3) {
+        margin-left: 3%;
+    }
+}
