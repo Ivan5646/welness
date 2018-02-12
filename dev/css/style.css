@@ -2708,7 +2708,7 @@ select {
 
 @media (max-width:767px) {
     body {
-        background: 0 0
+        /*background: 0 0*/
     }
     .visible-xs {
         text-align: center;
@@ -2956,6 +2956,13 @@ select {
 }
 
 @media (max-width:400px) {
+    body {
+            background: url(../img/background/1.jpg) 50% 0 no-repeat, 
+            url(../img/background/2.jpg) 50% 660px no-repeat, 
+            url(../img/background/3.jpg) 50% 1335px no-repeat, 
+            url(../img/background/5.jpg) 50% 3139px no-repeat, 
+            url(../img/background/6.jpg) 50% 5764px no-repeat;
+    }
     .container {
         width: 400px!important
     }
