@@ -1455,7 +1455,14 @@ body {
     font-family: Roboto, sans-serif;
     color: #191a1a;
     font-size: 22px;
-    background: url(../img/background/2.jpg) 50% 660px no-repeat, url(../img/background/3.jpg) 50% 1465px no-repeat, url(../img/background/5.jpg) 50% 3065px no-repeat, url(../img/background/6.jpg) 50% 5170px no-repeat
+    /*background: url(../img/background/2.jpg) 50% 660px no-repeat, url(../img/background/3.jpg) 50% 1465px no-repeat, url(../img/background/5.jpg) 50% 3065px no-repeat, url(../img/background/6.jpg) 50% 5170px no-repeat*/
+    /*background: url(../img/expert.jpg) 50% 3065px no-repeat;*/
+/*    background-image: url(../img/expert.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+*/
+/*background: url(../img/background/2.jpg) 50% 660px no-repeat, url(../img/background/3.jpg) 50% 1465px no-repeat, url(../img/expert.png) 50% 3065px no-repeat, url(../img/background/6.jpg) 50% 5170px no-repeat*/
 }
 
 h1,
@@ -1496,6 +1503,13 @@ select {
     src: url(../fonts/BloggerSans-Medium.eot?#iefix) format("embedded-opentype"), url(../fonts/BloggerSans-Medium.otf) format("opentype"), url(../fonts/BloggerSans-Medium.woff) format("woff"), url(../fonts/BloggerSans-Medium.ttf) format("truetype"), url(../fonts/BloggerSans-Medium.svg#BloggerSans-Medium) format("svg");
     font-weight: 400;
     font-style: normal
+}
+
+.expert-pic {
+    background-image: url(../img/expert.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
 }
 
 .section1 {
@@ -2021,7 +2035,7 @@ select {
 
 .section6__text:before {
     content: '';
-    display: block;
+    display: none;
     position: absolute;
     left: 27px;
     background-image: url(../img/sprite/sprite.png);
@@ -2464,6 +2478,7 @@ select {
         line-height: 1.6
     }
     .section6__text:before {
+        display: block;
         left: -22px
     }
     .section7__header {

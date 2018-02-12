@@ -1,0 +1,19 @@
+.expert {
+	background-image: url(../img/expert.jpg);
+	background-repeat: no-repeat;
+	/*background-size: cover;*/
+	background-position: -240px 50%;
+	background-color: #ededed;
+}
+
+.expert_notepad {
+/*    padding-top: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-bottom: 25px;
+    background: url(../img/text-background.png) no-repeat;
+    background-size: 100% 100%;*/
+    max-width: 560px;
+    float: right;
+}
