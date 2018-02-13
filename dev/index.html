@@ -426,6 +426,7 @@
 
         // counter
         var counter = 8;
+        var step = Math.floor(Math.random() * 40000) + 10000;
         var interval = setInterval(function() {
             counter--;
             jQuery(".counter__sec .counter__num_item").html(counter);
@@ -435,7 +436,7 @@
                 // Stop the counter
                 clearInterval(interval);
             }
-        }, 30000);
+        }, step);
 
         });
 
