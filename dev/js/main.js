@@ -54,3 +54,11 @@
 //         responsive: [{breakpoint: 991, settings: {slidesToShow: 1, dots: true}}]
 //     })
 // });
+
+
+
+// $(".section9__slider").slick({ 
+//     infinite: !0,   
+//     slidesToShow: 3,         
+//     responsive: [{breakpoint: 991, settings: {slidesToShow: 1, dots: true}}]
+// })

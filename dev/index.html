@@ -242,48 +242,49 @@
 				<section class="section9">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<div class="row">
-							<h2 class="section9__header">ЭТИ ДЕВУШКИ УЖЕ ПОПРОБОВАЛИ Welness!</h2>
+							<h2 class="section9__header">ЭТИ ДЕВУШКИ УЖЕ ПОПРОБОВАЛИ ТУРБОФИТ!</h2>
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 								<div class="row">
-									<div class="section9__slider slick-initialized slick-slider" role="toolbar">
-										
-										
-										
-									<div aria-live="polite" class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 1170px; transform: translate3d(0px, 0px, 0px);" role="listbox"><div class="section9__userblock col-lg-4 col-md-4 col-sm-12 col-xs-12 slick-slide slick-current slick-active" style="width: 390px;" tabindex="-1" role="option" aria-describedby="slick-slide00" data-slick-index="0" aria-hidden="false">
+									<div class="section9__slider">
+										<div class="section9__userblock col-lg-4 col-md-4 col-sm-12 col-xs-12">
 											<div class="row">
-												<img src="img/1.png" alt="">
-												<p class="section9__text">Перед свадьбой из-за стресса набрала лишнего, и переживала, как похудеть то?! Услышала про Welness , почитала отзывы и купила. <strong>В итоге, я похудела на 6,5 килограмм и при этом, вес
+												<img src="img/user-photo/1.png" alt="">
+												<p class="section9__text">Перед свадьбой из-за стресса набрала лишнего, и переживала, как похудеть то?! Услышала про Турбофит , почитала отзывы и купила. <strong>В итоге, я похудела на 6,5 килограмм и при этом, вес
 														держится уже пол года. Ну а свадебное платье было даже немного велико!</strong> Принимать саше просто и удобно, главное не забывать, и вкус очень приятный!
 												</p>
 												<span class="section9__username">Алина, 42 года</span>
 											</div>
-										</div><div class="section9__userblock col-lg-4 col-md-4 col-sm-12 col-xs-12 slick-slide slick-active" style="width: 390px;" tabindex="-1" role="option" aria-describedby="slick-slide01" data-slick-index="1" aria-hidden="false">
+										</div>
+										<div class="section9__userblock col-lg-4 col-md-4 col-sm-12 col-xs-12">
 											<div class="row">
-												<img src="img/2.png" alt="">
-												<p class="section9__text">В моем возрасте уже сложно выполнять различные физические упражнения и сидеть на диетах, а выглядеть стройной и привлекать мужчин все еще хочется. <strong>Решила попробовать Welness по совету
+												<img src="img/user-photo/2.png" alt="">
+												<p class="section9__text">В моем возрасте уже сложно выполнять различные физические упражнения и сидеть на диетах, а выглядеть стройной и привлекать мужчин все еще хочется. <strong>Решила попробовать Турбофит по совету
 														подруги и осталась под впечатлением.</strong> Результатом очень довольна!
 												</p>
 												<span class="section9__username">Яна, 32 лет</span>
 											</div>
-										</div><div class="section9__userblock col-lg-4 col-md-4 col-sm-12 col-xs-12 slick-slide slick-active" style="width: 390px;" tabindex="-1" role="option" aria-describedby="slick-slide02" data-slick-index="2" aria-hidden="false">
+										</div>
+										<div class="section9__userblock col-lg-4 col-md-4 col-sm-12 col-xs-12">
 											<div class="row">
-												<img src="img/3.png" alt="">
-												<p class="section9__text">Всегда стеснялась своих форм и мечтала похудеть, но времени на спортзал и диеты нет, так как я воспитываю трех детей! <strong>Купила Welness и через 7 дней не поверила цифре на весах! И почему
+												<img src="img/user-photo/3.png" alt="">
+												<p class="section9__text">Всегда стеснялась своих форм и мечтала похудеть, но времени на спортзал и диеты нет, так как я воспитываю трех детей! <strong>Купила Турбофит и через 7 дней не поверила цифре на весах! И почему
 														раньше не было такого классного средства?</strong>
 												</p>
 												<span class="section9__username">Василиса, 34 года</span>
 											</div>
-										</div></div></div></div>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 								<div class="row">
-									<p class="section9__footer_text">Создать идеальное тело - <strong>легко</strong> вместе с Welness!</p>
+									<p class="section9__footer_text">Создать идеальное тело - <strong>легко</strong> вместе с Турбофит!</p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
+
 			</div>
 		</div>
 
@@ -384,9 +385,11 @@
 		<!-- slick slider initialization -->
 		<script> 
 			$(document).ready(function(){
-				$('.your-class').slick({
-					
-				});
+				$(".section9__slider").slick({ 
+					infinite: !0,   
+					slidesToShow: 3,         
+					responsive: [{breakpoint: 991, settings: {slidesToShow: 1, dots: true}}]
+				})
 			});
 		</script>
 	
