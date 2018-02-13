@@ -1505,6 +1505,13 @@ select {
     font-style: normal
 }
 
+.mob-bg {
+    background-image: url(../img/1_up.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
 .expert-pic {
     background-image: url(../img/expert.jpg);
     background-repeat: no-repeat;
@@ -1515,7 +1522,7 @@ select {
 .section1 {
     padding-top: 10px;
     padding-bottom: 30px;
-    background: url(../img/background/1.jpg) 50% 0 no-repeat
+    background: url(../img/background/1.jpg) 50% 0 no-repeat;
 }
 
 .section1__header {
@@ -2522,7 +2529,11 @@ select {
 
 @media (max-width:991px) {
     body {
-        background: url(../img/background/1.jpg) 50% 0 no-repeat, url(../img/background/2.jpg) 50% 660px no-repeat, url(../img/background/3.jpg) 50% 1335px no-repeat, url(../img/background/5.jpg) 50% 3139px no-repeat, url(../img/background/6.jpg) 50% 5764px no-repeat
+        background: url(../img/background/1.jpg) 50% 0 no-repeat, 
+        url(../img/background/2.jpg) 50% 660px no-repeat, 
+        url(../img/background/3.jpg) 50% 1335px no-repeat, 
+        /*url(../img/background/5.jpg) 50% 3139px no-repeat, */
+        url(../img/background/6.jpg) 50% 5764px no-repeat
     }
     .section1__down_text {
         margin-top: 43px
@@ -2709,6 +2720,13 @@ select {
 @media (max-width:767px) {
     body {
         /*background: 0 0*/
+    }
+    .bottom-order {
+        background-size: 100% !important;
+    }
+    .expert {
+        background-image: none !important;
+        background-color: transparent !important;
     }
     .visible-xs {
         text-align: center;
@@ -2957,15 +2975,29 @@ select {
 
 @media (max-width:400px) {
     body {
-            background: url(../img/background/1.jpg) 50% 0 no-repeat, 
+/*            background: url(../img/background/1_up.jpg) 50% 495px no-repeat, 
             url(../img/background/2.jpg) 50% 660px no-repeat, 
             url(../img/background/3.jpg) 50% 1335px no-repeat, 
             url(../img/background/5.jpg) 50% 3139px no-repeat, 
-            url(../img/background/6.jpg) 50% 5764px no-repeat;
+            url(../img/background/6.jpg) 50% 5764px no-repeat;*/
+            background: none !important;
     }
-    .container {
+
+    .bottom-order {
+        background-color: #c7ccd0;
+            background-image: none !important;
+    }
+
+    .section1 {
+        padding-bottom: 0;
+    }
+    .section2 {
+        padding-top: 80px;
+    }
+
+/*    .container {
         width: 400px!important
-    }
+    }*/
 }
 
 .slick-dots {
