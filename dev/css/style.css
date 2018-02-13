@@ -1809,7 +1809,7 @@ select {
 }
 
 .section2__block {
-    margin-top: 65px
+    margin-top: 130px
 }
 
 .section2_rightblock {
@@ -2403,7 +2403,11 @@ select {
 
 @media (max-width:1199px) {
     body {
-        background: url(../img/background/1.jpg) 50% 0 no-repeat, url(../img/background/2.jpg) 50% 660px no-repeat, url(../img/background/3.jpg) 50% 1472px no-repeat, url(../img/background/5.jpg) 50% 3092px no-repeat, url(../img/background/6.jpg) 50% 5223px no-repeat
+        background: url(../img/background/1.jpg) 50% 0 no-repeat, 
+        url(../img/background/2.jpg) 50% 660px no-repeat, 
+        url(../img/background/3.jpg) 50% 1472px no-repeat, 
+        /*url(../img/background/5.jpg) 50% 3092px no-repeat,*/ 
+        url(../img/background/6.jpg) 50% 5223px no-repeat
     }
     .section1__form {
         width: 293px
