@@ -2474,7 +2474,7 @@ select {
         font-size: 20px
     }
     .section3__img {
-        width: 84%
+       /* width: 84%*/
     }
 /*    .section3__img_fruit {
         background: 0 0;
