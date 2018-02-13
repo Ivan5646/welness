@@ -28,7 +28,7 @@ style.css:2720
 Заводим в ПП(binom), проверяем корректность отображения лидов
 
 
-js counter
+js counter ok?
 fonts
 alingnment
 bg expert text

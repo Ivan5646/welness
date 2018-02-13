@@ -17,3 +17,9 @@
     max-width: 560px;
     float: right;
 }
+
+@media (max-width:991px) {
+    .expert {
+        background-position: -410px 50%;
+    }         
+}
