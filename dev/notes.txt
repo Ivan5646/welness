@@ -7,17 +7,15 @@ img/turbo-img-fruit.png  502 õ 533
 
 
 
-
-
-
-
-
-
-
-
 @media (max-width: 767px)
 style.css:2720
 .section1 {
     background: url(../img/background/1_up.jpg);
     padding-bottom: 80px;
 }
+
+
+
+Done
+form
+validation
