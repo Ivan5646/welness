@@ -350,7 +350,7 @@
                             <!-- <span class="header__counter text-bottom">минут</span> -->
                         </div>
                         <div class="counter__sec">
-                            <span class="counter__num_item">5</span>
+                            <span class="counter__num_item">8</span>
                             <!-- <span class="header__counter text-bottom">секунд</span> -->
                         </div>
                     </div>
@@ -430,9 +430,9 @@
         var interval = setInterval(function() {
             counter--;
             jQuery(".counter__sec .counter__num_item").html(counter);
-            if (counter == 0) {
+            if (counter == 1) {
                 //Do something
-                jQuery("#number").html("Countdown ended!");
+                //jQuery("#number").html("Countdown ended!");
                 // Stop the counter
                 clearInterval(interval);
             }
