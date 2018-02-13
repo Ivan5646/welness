@@ -72,20 +72,20 @@
                                             <div class="counter__num">
                                                 <span class="counter__num_text">Осталось</span>
                                                 <div class="countdown__wrap">
-                                                    <span class="hour">0</span>
-                                                    <span class="minute">0</span>
-                                                    <span class="second">5</span>
+                                                    <!--                                    <span class="hour">0</span>
+                                                                                        <span class="minute">0</span>
+                                                                                        <span class="second">5</span> -->
                                                 </div>
                                                 <div class="counter__hour">
-                                                    <span class="counter__num_item"></span>
+                                                    <span class="counter__num_item">0</span>
                                                     <!-- <span class="header__counter text-bottom">часов</span> -->
                                                 </div>
                                                 <div class="counter__min">
-                                                    <span class="counter__num_item"></span>
+                                                    <span class="counter__num_item">0</span>
                                                     <!-- <span class="header__counter text-bottom">минут</span> -->
                                                 </div>
                                                 <div class="counter__sec">
-                                                    <span class="counter__num_item"></span>
+                                                    <span class="counter__num_item">8</span>
                                                     <!-- <span class="header__counter text-bottom">секунд</span> -->
                                                 </div>
                                             </div>
@@ -161,7 +161,7 @@
         <section class="section3">
             <div class="section3__block col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="row">
-                    <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12 wellness-about">
                         <div class="row">
                             <h2 class="section3__header">
                                 Что такое Wellness?
@@ -178,7 +178,7 @@
                     <div class="col-lg-6 col-md-5 hidden-sm">
                         <div class="row">
                             <span class="section3__img_block"></span>
-                            <img class="section3__img" src="img/masaje-reductivo.jpg" alt="">
+                            <!-- <img class="section3__img" src="img/masaje-reductivo.jpg" alt=""> -->
                             <!-- <img class="section3__img_fruit" src="img/prickly-big.png" alt=""> -->
                         </div>
                     </div>
@@ -412,15 +412,33 @@
 			});
 		</script> -->
 
-<!-- slick slider initialization -->
+
 <script>
+    
     $(document).ready(function(){
+        // slick slider initialization 
         $(".section9__slider").slick({
             infinite: !0,
             slidesToShow: 3,
             responsive: [{breakpoint: 991, settings: {slidesToShow: 1, dots: true}}]
         })
-    });
+
+
+        // counter
+        var counter = 8;
+        var interval = setInterval(function() {
+            counter--;
+            jQuery(".counter__sec .counter__num_item").html(counter);
+            if (counter == 0) {
+                //Do something
+                jQuery("#number").html("Countdown ended!");
+                // Stop the counter
+                clearInterval(interval);
+            }
+        }, 30000);
+
+        });
+
 </script>
 
 <!-- form validation -->
