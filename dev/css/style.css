@@ -1455,7 +1455,9 @@ body {
     font-family: Roboto, sans-serif;
     color: #191a1a;
     font-size: 22px;
-    /*background: url(../img/background/2.jpg) 50% 660px no-repeat, url(../img/background/3.jpg) 50% 1465px no-repeat, url(../img/background/5.jpg) 50% 3065px no-repeat, url(../img/background/6.jpg) 50% 5170px no-repeat*/
+    background: url(../img/background/2.jpg) 50% 660px no-repeat, 
+    url(../img/background/3.jpg) 50% 1465px no-repeat, 
+    url(../img/background/6.jpg) 50% 5170px no-repeat
     /*background: url(../img/expert.jpg) 50% 3065px no-repeat;*/
 /*    background-image: url(../img/expert.jpg);
     background-repeat: no-repeat;
@@ -2013,17 +2015,16 @@ select {
 }
 
 .section6__blockitem {
-    padding-top: 35px;
+    /*padding-top: 35px;*/
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 25px;
-    padding-bottom: 25px;
+    /*padding-bottom: 25px;*/
     background: url(../img/text-background.png) no-repeat;
     background-size: 100% 100%
 }
 
 .section6__header {
-    font-size: 50px;
+    font-size: 44px;
     text-align: center;
     margin-bottom: 20px
 }
@@ -2031,8 +2032,9 @@ select {
 .section6__text {
     font-style: italic;
     font-weight: 100;
-    font-size: 24px;
-    line-height: 1.46
+    font-size: 22px;
+    line-height: 1.46;
+    text-align: center;
 }
 
 .section6__text strong {
@@ -2725,9 +2727,9 @@ select {
     body {
         /*background: 0 0*/
     }
-    .bottom-order {
+/*    .bottom-order {
         background-size: 100% !important;
-    }
+    }*/
     .expert {
         background-image: none !important;
         background-color: transparent !important;
@@ -2987,10 +2989,10 @@ select {
             background: none !important;
     }
 
-    .bottom-order {
+/*    .bottom-order {
         background-color: #c7ccd0;
             background-image: none !important;
-    }
+    }*/
 
     .section1 {
         padding-bottom: 0;
