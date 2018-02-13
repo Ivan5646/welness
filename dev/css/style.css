@@ -3027,3 +3027,10 @@ select {
     background: #e50b95;
     font-size: 0
 }
+
+
+.counter__num_item {
+    color:#fff;
+    font-weight: 700;
+    font-size: 36px;
+}

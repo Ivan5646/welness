@@ -11,8 +11,13 @@
 	margin: 0 auto;
 }
 .bottom-order_order-btn {
+/*	position: relative !important;
+	left: 16px !important;*/
 	position: relative !important;
-	left: 16px !important;
+	left: 50% !important;
+	transform: translateX(-50%);
+	bottom: -30px !important;
+
 /*	font-family: BloggerSans-Medium, sans-serif;
     font-size: 35px;
     color: #fff;
@@ -35,16 +40,16 @@
  }*/
 
 
-@media (max-width:991px) { 
-	.bottom-order_order-btn {
-		position: relative !important;
-		left: 2px !important;
-	}
-
-}
 
 @media (max-width:991px) { 
 	.bottom-order_order-btn {
-		bottom: 0 !important;
+		bottom: -40px !important;
 	}
 }
+
+@media (max-width:400px) { 
+	.bottom-order_order-btn {
+		bottom: -53px !important;
+	}
+}
+
