@@ -10,7 +10,12 @@
 .ex-machines h4 {
     text-align: center;
     margin-bottom: 30px;
-    margin-top: 10px;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 26px;
 }
 
 .ex-machines_machine {
@@ -44,6 +49,7 @@
     color: #e50b95;
     font-weight: 700;
     height: 110px;
+    padding: 10px;
     /*line-height: 110px;*/
 }
 .ex-machines_description-wrapper {
@@ -55,7 +61,7 @@
 .ex-machines_full-description {
     border-top: 4px solid #ffff00;
     margin-top: 20px;
-    padding: 10px;
+    padding: 16px;
 }
 
 
@@ -68,7 +74,7 @@
     .ex-machines_machine {
         width: 44%;
         margin-right: 6%;
-        margin-bottom: 3%;
+        margin-bottom: 4%;
     }
 
     .ex-machines_machine:nth-child(2), .ex-machines_machine:nth-child(4) {
@@ -91,7 +97,7 @@
     .ex-machines_machine {
         width: 100%;
         margin-right: 0;
-        margin-bottom: 6%;
+        margin-bottom: 8%;
     }
 
     .ex-machines_machine:nth-child(3) {
