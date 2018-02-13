@@ -1456,8 +1456,8 @@ body {
     color: #191a1a;
     font-size: 22px;
     background: url(../img/background/2.jpg) 50% 660px no-repeat, 
-    url(../img/background/3.png) 50% 1465px no-repeat, 
-    url(../img/background/6.jpg) 50% 5170px no-repeat
+    url(../img/background/3.png) 50% 1465px no-repeat; 
+    /*url(../img/background/6.jpg) 50% 5170px no-repeat*/
     /*background: url(../img/expert.jpg) 50% 3065px no-repeat;*/
 /*    background-image: url(../img/expert.jpg);
     background-repeat: no-repeat;
@@ -1490,7 +1490,7 @@ select {
 }
 
 .pink {
-    color: #e50b95
+    color: #e50b95;
 }
 
 @font-face {
@@ -1532,6 +1532,11 @@ select {
     text-align: center;
     font-size: 74px;
     margin-bottom: 20px
+}
+
+.section1__header .pink{
+    text-transform: none;
+    font-weight: 700;
 }
 
 .section1__header_min {
@@ -1897,7 +1902,8 @@ select {
 
 .section3__header {
     margin-bottom: 35px;
-    font-size: 50px
+    font-size: 50px;
+    text-transform: none !important;
 }
 
 .section3__header .section3__header_yellow {
@@ -2409,7 +2415,7 @@ select {
         url(../img/background/2.jpg) 50% 660px no-repeat, 
         url(../img/background/3.png) 50% 1472px no-repeat, 
         /*url(../img/background/5.jpg) 50% 3092px no-repeat,*/ 
-        url(../img/background/6.jpg) 50% 5223px no-repeat
+       /* url(../img/background/6.jpg) 50% 5223px no-repeat*/
     }
     .section1__form {
         width: 293px
