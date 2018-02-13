@@ -22,7 +22,7 @@
 
 .ex-machines_img {
     background-image: url(../img/roller.png);
-    background-size: 80%;
+    background-size: auto; /*80%;*/
     background-repeat: no-repeat;
     background-position: center;
     width: auto;
@@ -44,6 +44,12 @@
     color: #e50b95;
     font-weight: 700;
     height: 110px;
+    /*line-height: 110px;*/
+}
+.ex-machines_description-wrapper {
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
 }
 
 .ex-machines_full-description {
@@ -70,5 +76,28 @@
     }
     .ex-machines_machine:nth-child(3) {
         margin-left: 3%;
+    }
+
+    .ex-machines_img--vibro {
+        background-size: 42%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .ex-machines_full-description {
+        font-size: 16px;
+    }
+
+    .ex-machines_machine {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 6%;
+    }
+
+    .ex-machines_machine:nth-child(3) {
+        margin-left: 0;
+    }
+    .ex-machines_img--vibro {
+        background-size: 49%;
     }
 }
