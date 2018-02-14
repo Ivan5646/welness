@@ -1,9 +1,9 @@
 .expert {
-    height: 716px;
+    height: 740px;
 	background-image: url(../img/expert.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: -212px 0%;
+	background-position: -240px 0%;
 	background-color: #ededed;
 }
 
@@ -16,7 +16,7 @@
     background: url(../img/text-background.png) no-repeat;
     background-size: 100% 100%;*/
     position: relative;
-    top: 14px;
+    top: 34px;
 /*    top: 50%;
     transform: translateY(-50%);*/
     max-width: 610px;
@@ -25,8 +25,7 @@
 
 @media (max-width:991px) {
     .expert {
-        background-position: -360px 0%;
-        height: 738px;
+        background-position: -410px 50%;
     }    
     .expert_notepad {
         position: static;
@@ -35,7 +34,7 @@
 }
 
 /*@media (max-width:768px) {
-    .expert {
-        background-position: -274px 0%;
+    .expert_notepad {
+        max-width: 580px;
     }
 }*/

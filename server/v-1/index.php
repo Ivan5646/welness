@@ -1,4 +1,35 @@
+<?php
+include '/var/lib/blackbox/BlackBox.php';
+$config = dirname(__FILE__) . '/../config.php';
+BlackBox::init($config);
+BlackBox::Lead()->init();
 
+
+if (!BlackBox::Geo()->isAvailable())
+    BlackBox::Geo()->detectGeo(true);
+
+$inCity = BlackBox::Geo()->isAvailable() ? ' в ' . BlackBox::Geo()->geoInflect(5) : '';
+$fromCity = BlackBox::Geo()->isAvailable() ? ' из ' . BlackBox::Geo()->geoInflect(1) : '';
+$noCity = BlackBox::Geo()->isAvailable() ? BlackBox::Geo()->geoInflect(1) : '';
+
+$monthAr = array(
+    1 => array('январь', 'января'),
+    2 => array('февраль', 'февраля'),
+    3 => array('март', 'марта'),
+    4 => array('апрель', 'апреля'),
+    5 => array('май', 'мая'),
+    6 => array('июнь', 'июня'),
+    7 => array('июль', 'июля'),
+    8 => array('август', 'августа'),
+    9 => array('сентябрь', 'сентября'),
+    10 => array('октябрь', 'октября'),
+    11 => array('ноябрь', 'ноября'),
+    12 => array('декабрь', 'декабря')
+);
+$date = new DateTime(date('d-m-Y'));
+$date->add(new DateInterval('P3D'));
+$inDate = $date->format('j') . " " . $monthAr[$date->format('n')][1];
+?>
 
 <!DOCTYPE html>
 <html lang="ru"><head>
@@ -7,13 +38,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wellness</title>
     <!--[if lt IE 9]>
-    <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.8/es5-shim.min.js"></script>-->
-    <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.8/es5-shim.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- <script async="" src="js/analytics.js"></script> -->
     <!-- <script type="text/javascript" async="" src="js/watch.js"></script> -->
-<!--    <script type="text/javascript" async="" id="topmailru-code" src="js/code.js"></script>-->
-<!--    <script src="js/jquery-1.12.4.min.js"></script>-->
+    <script type="text/javascript" async="" id="topmailru-code" src="js/code.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
     <!-- <script src="js/mobile-detect.min.js"></script> -->
     <!-- 		<script>
                 var md = new MobileDetect(window.navigator.userAgent);
@@ -390,10 +421,7 @@
 <!-- <script src="js/jquery.cookie.min.js"></script> -->
 <!-- <script src="js/purl.min.js"></script> -->
 <!-- <script src="js/jquery.countdown.min.js"></script> -->
-
-<script src="//ajax.ɡooɡleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/slick.min.js"></script>
-
 <!-- <script src="js/leadprofit.js"></script> -->
 <!-- 		<script type="text/javascript">
 			$(document).ready(function () {

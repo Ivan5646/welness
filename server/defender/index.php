@@ -1,4 +1,35 @@
+<?php
+include '/var/lib/blackbox/BlackBox.php';
+$config = dirname(__FILE__) . '/../config.php';
+BlackBox::init($config);
+BlackBox::Lead()->init();
 
+
+if (!BlackBox::Geo()->isAvailable())
+    BlackBox::Geo()->detectGeo(true);
+
+$inCity = BlackBox::Geo()->isAvailable() ? ' в ' . BlackBox::Geo()->geoInflect(5) : '';
+$fromCity = BlackBox::Geo()->isAvailable() ? ' из ' . BlackBox::Geo()->geoInflect(1) : '';
+$noCity = BlackBox::Geo()->isAvailable() ? BlackBox::Geo()->geoInflect(1) : '';
+
+$monthAr = array(
+    1 => array('январь', 'января'),
+    2 => array('февраль', 'февраля'),
+    3 => array('март', 'марта'),
+    4 => array('апрель', 'апреля'),
+    5 => array('май', 'мая'),
+    6 => array('июнь', 'июня'),
+    7 => array('июль', 'июля'),
+    8 => array('август', 'августа'),
+    9 => array('сентябрь', 'сентября'),
+    10 => array('октябрь', 'октября'),
+    11 => array('ноябрь', 'ноября'),
+    12 => array('декабрь', 'декабря')
+);
+$date = new DateTime(date('d-m-Y'));
+$date->add(new DateInterval('P3D'));
+$inDate = $date->format('j') . " " . $monthAr[$date->format('n')][1];
+?>
 
 <!DOCTYPE html>
 <html lang="ru"><head>
