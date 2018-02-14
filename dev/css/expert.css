@@ -25,17 +25,35 @@
 
 @media (max-width:991px) {
     .expert {
-        background-position: -360px 0%;
-        height: 738px;
+/*        background-position: -360px 0%;
+        height: 738px;*/
+
+        background: 0 0;
+        height: auto;
     }    
     .expert_notepad {
         position: static;
-        max-width: 580px;
+        /*max-width: 580px;*/
+        float: none;
+        margin: 0 auto;
+        padding-right: 46px !important;
+        padding-left: 74px !important;
     }     
 }
 
-/*@media (max-width:768px) {
-    .expert {
-        background-position: -274px 0%;
+@media (max-width:520px) { 
+    .expert_notepad {
+        background: 0 0;
+        padding-right: 10px !important;
+        padding-left: 10px !important;
     }
-}*/
+
+/*    .section6__text {
+        font-size: 16px !important;
+    }
+    .section6__header {
+        font-size: 20px !important;
+    }*/
+}
+
+

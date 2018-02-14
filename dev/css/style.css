@@ -2637,7 +2637,7 @@ select {
         left: 14%
     }
     .section6__blockitem {
-        background: 0 0
+        /*background: 0 0;*/
     }
     .section6__text:before {
         display: none
@@ -2722,8 +2722,9 @@ select {
         left: 107px
     }
     .section6__text {
-        font-weight: 500;
-        padding-left: 50px
+        /*font-weight: 500;*/
+        /*padding-left: 50px;*/
+        text-align: left;
     }
 }
 
@@ -2862,14 +2863,15 @@ select {
     }
     .section6__text {
         padding-left: 0;
-        padding-right: 0
+        padding-right: 0;
+        font-size: 18px; /*18px;*/
     }
     .section7__header {
         padding-top: 32px;
         font-size: 32px
     }
     .section6__header {
-        font-size: 38px
+        font-size: 30px;  /*30px;*/
     }
     .section7__header {
         font-size: 38px
