@@ -31,7 +31,7 @@ style.css:2720
 js counter ok?
 fonts
 alingnment
-bg expert text
+bg expert text ok, but bg is cut
 
 
 Done
