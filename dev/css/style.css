@@ -1456,7 +1456,7 @@ body {
     color: #191a1a;
     font-size: 22px;
     background: url(../img/background/2.jpg) 50% 660px no-repeat, 
-    url(../img/background/3.png) 50% 1465px no-repeat; 
+    url(../img/background/3.png) 50% 1495px no-repeat; 
     /*url(../img/background/6.jpg) 50% 5170px no-repeat*/
     /*background: url(../img/expert.jpg) 50% 3065px no-repeat;*/
 /*    background-image: url(../img/expert.jpg);
@@ -2413,9 +2413,7 @@ select {
     body {
         background: url(../img/background/1.jpg) 50% 0 no-repeat, 
         url(../img/background/2.jpg) 50% 660px no-repeat, 
-        url(../img/background/3.png) 50% 1472px no-repeat, 
-        /*url(../img/background/5.jpg) 50% 3092px no-repeat,*/ 
-       /* url(../img/background/6.jpg) 50% 5223px no-repeat*/
+        url(../img/background/3.png) 50% 1512px no-repeat;
     }
     .section1__form {
         width: 293px
@@ -2543,7 +2541,7 @@ select {
     body {
         background: url(../img/background/1.jpg) 50% 0 no-repeat, 
         url(../img/background/2.jpg) 50% 660px no-repeat, 
-        url(../img/background/3.png) 50% 1335px no-repeat, 
+        url(../img/background/3.png) 50% 1226px no-repeat, 
         /*url(../img/background/5.jpg) 50% 3139px no-repeat, */
         url(../img/background/6.jpg) 50% 5764px no-repeat
     }
